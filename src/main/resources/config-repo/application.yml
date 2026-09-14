@@ -1,0 +1,15 @@
+# Propiedades comunes a todos los microservicios (fuente: infra-config.md).
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: devpassword
+
+# Preparado para Fase II: service-registry Eureka.
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
