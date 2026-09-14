@@ -2,6 +2,9 @@
 spring:
   kafka:
     bootstrap-servers: localhost:9092
+    producer:
+      # Los productores publican payloads Map/JSON; sin esto Kafka usa StringSerializer y falla en runtime.
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
   data:
     redis:
       host: localhost
