@@ -1,4 +1,0 @@
-spring:
-  data:
-    mongodb:
-      uri: mongodb://devuser:devpassword@localhost:27017/wallet_db?authSource=admin
