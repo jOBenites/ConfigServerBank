@@ -15,8 +15,11 @@ spring:
 
 eureka:
   client:
-    # Preparado para Fase II: cambiar a true quando exista service-registry.
-    enabled: false
+    enabled: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
 
 management:
   endpoints:
