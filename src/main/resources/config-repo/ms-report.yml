@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://devuser:devpassword@localhost:27017/report_db?authSource=admin
