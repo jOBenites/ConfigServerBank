@@ -2,3 +2,8 @@ spring:
   data:
     mongodb:
       uri: mongodb://devuser:devpassword@localhost:27017/account_db?authSource=admin
+
+account:
+  minimum-opening-amount: 0
+  free-monthly-transactions: 5
+  transaction-commission: 0.50
