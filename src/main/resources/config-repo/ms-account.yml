@@ -7,3 +7,4 @@ account:
   minimum-opening-amount: 0
   free-monthly-transactions: 5
   transaction-commission: 0.50
+  vip-minimum-daily-average: 1000
